@@ -15,7 +15,7 @@ classifiers = [
 dependencies = [
     "markdown2[all]", "numpy",
     "requests", "sentencepiece", "tokenizers>=0.15.2",
-    "torch", "torchvision", "wandb",
+    "torch==2.4.0", "torchvision", "wandb",
     "shortuuid", "httpx==0.24.0",
     "deepspeed==0.12.3",
     "peft==0.4.0",
