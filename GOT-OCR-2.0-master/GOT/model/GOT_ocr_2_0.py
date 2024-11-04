@@ -140,6 +140,7 @@ class GOTQwenModel(Qwen2Model):
 
                 else:
                     image_patches = torch.unbind(image[1])
+                    print(len(image_patches))
                     image_patches_features = []
                     for image_patch in image_patches:
                         image_p = torch.stack([image_patch])
@@ -150,7 +151,7 @@ class GOTQwenModel(Qwen2Model):
                         image_patches_features.append(image_feature_p)
                     image_feature = torch.cat(image_patches_features, dim=1)
                     # print(P)
-                    # print(image_feature.shape)
+                    print(image_feature.shape)
                     # exit()
                     image_features.append(image_feature)
 

@@ -27,7 +27,8 @@ DEFAULT_IMAGE_PATCH_TOKEN = '<imgpad>'
 DEFAULT_IM_START_TOKEN = '<img>'
 DEFAULT_IM_END_TOKEN = '</img>'
 
-
+# set default cuda device as 1
+torch.cuda.set_device(1)
  
 translation_table = str.maketrans(punctuation_dict)
 
